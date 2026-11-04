@@ -19,7 +19,7 @@ test('CI/CD Quality Gatekeeper - Instructor Demo Tests', async (t) => {
     // - ESTADO FALLIDO (Actual): 'UNDER_REVIEW' -> Provoca fallo y activa el Gatekeeper.
     // - ESTADO APROBADO (Solución): Cambiar a 'READY_FOR_RELEASE' para superar la auditoría.
     const releaseApproval = {
-      status: 'UNDER_REVIEW', // <-- Cambiar a 'READY_FOR_RELEASE' para aprobar
+      status: 'READY_FOR_RELEASE', // <-- Cambiar a 'READY_FOR_RELEASE' para aprobar
       securityAuditPassed: true,
       buildTarget: 'production'
     };
